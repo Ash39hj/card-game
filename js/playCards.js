@@ -14,6 +14,9 @@ $(document).ready(function(){
         el.html('');
         for(var i=0;i<hand.length;i++){
             el.append(hand[i].getHTML());
+            var doShuffle = function(){
+        cardHand.shuffle();
+        cardHand.spread(); // update card table
         }
     }
     var doShuffle = function(){
